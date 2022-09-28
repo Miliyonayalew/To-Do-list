@@ -6,18 +6,18 @@ const todoData = [
   {
     description: 'Reading about api',
     completed: true,
-    index: 0,
+    index: 2,
   },
   {
     description: 'Reading about dom manipulation',
     completed: false,
-    index: 0,
+    index: 3,
   },
 
   {
     description: 'Joining morning standup',
     completed: false,
-    index: 0,
+    index: 1,
   },
 ];
 
@@ -33,6 +33,7 @@ const createTodo = (todolists) => {
 };
 
 const addTodo = () => {
+  todoData.sort((a, b) => a.index - b.index);
   todoData.forEach((todo) => {
     createTodo(todo);
   });
