@@ -1,7 +1,111 @@
-body {
-    background-color: bisque;
-}
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+  }
 
-h1 {
-    color: red;
-}
+  .todo-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 40%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+  }
+
+  .todo-container h1{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .todo-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;;    
+  }
+
+  .add-task{
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+  }
+  .add-task input{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+  }
+
+  .add-task button{
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  #todoList{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-right: .5rem;
+    overflow-y: scroll; 
+  }
+
+  #todoList::-webkit-scrollbar {
+    display: none;
+  }
+
+  #todoList li{
+    display: flex;
+    align-items: center;
+    height: 8vh;
+  }
+
+  .todos, .add-task {
+    border-bottom: 1px solid #ccc;
+  }
+
+    #mylist {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    }
+
+    #delete{
+        display: none;
+    }
+
+    .move{
+        cursor: move;
+    }
+    .clearCompleted{
+        padding: .8rem;
+        border: none;
+        color: #aaa;
+        background-color: #fff;
+        font-size: 1rem;
+    }
+    .clearCompleted:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
