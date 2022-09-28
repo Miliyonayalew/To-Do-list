@@ -30,18 +30,12 @@ const createTodo = (todolists) => {
                     <i class="fa-solid fa-ellipsis-vertical move"></i>
                     <button id="delete"><i class="fa-solid fa-trash-can"></i></button>`;
   todoList.appendChild(todos);
-  console.log(todolists.index);
 };
 
 const addTodo = () => {
   todoData.forEach((todo) => {
-    todo.index = +1;
     createTodo(todo);
   });
 };
 
 window.onload = addTodo();
-
-/* document.getElementById('add-todo').addEventListener('click', () => {
-  console.log(array[0].description);
-}); */
