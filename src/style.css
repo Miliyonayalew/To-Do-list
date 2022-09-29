@@ -94,6 +94,7 @@ body {
 }
 
 #delete {
+  cursor: pointer;
   border: none;
   display: none;
 }
