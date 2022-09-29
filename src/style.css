@@ -94,10 +94,13 @@ body {
 }
 
 #delete {
+  cursor: pointer;
+  border: none;
   display: none;
 }
 
 .move {
+  display: block;
   cursor: move;
 }
 
