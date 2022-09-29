@@ -94,10 +94,12 @@ body {
 }
 
 #delete {
+  border: none;
   display: none;
 }
 
 .move {
+  display: block;
   cursor: move;
 }
 
