@@ -53,7 +53,8 @@ body {
   width: 100%;
   border: none;
   outline: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-style: italic;
 }
 
 .add-task button {
@@ -80,11 +81,22 @@ body {
   height: 8vh;
 }
 
-.todos,
+#todos{
+  padding: 0 0.5rem;
+}
+
+#todos,
 .add-task {
   border-bottom: 1px solid #ccc;
 }
 
+#checked{
+  width: 1.3rem;
+  height: 1.3rem;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
 #mylist {
   width: 100%;
   border: none;
@@ -97,6 +109,7 @@ body {
   cursor: pointer;
   border: none;
   display: none;
+  border-color: none;
 }
 
 .move {
@@ -115,4 +128,18 @@ body {
 .clearCompleted:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+.notify {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 1.5rem;
+  color: rgb(71, 226, 71);
+}
+
+.selection {
+  background-color: '#';
 }
