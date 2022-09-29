@@ -8,6 +8,9 @@ In this project, I built a simple HTML list of To Do tasks. This simple web page
 - Github and Git
 - Webpack
 - VSCode
+## Live Demo 
+
+[Live Demo Link](https://miliyonayalew.github.io/To-Do-list/)
 
 ## Getting Started
 To get a local copy up run the following steps.
@@ -16,6 +19,7 @@ To get a local copy up run the following steps.
 - Have NodeJS installed and follow the next steps
 
 ## Usage
+- git clone https://github.com/Miliyonayalew/To-Do-list.git
 - npm i for installing dev dependencies
 - npm run build or npm start to see the project
 
